@@ -8,11 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MerchantGalaxyTest {
 
     @Test
-    void dummyTest() {
-        assertEquals(1, 0);
-    }
-
-    @Test
     void merchantCanTranslateIntergalacticWordsIntoRomanNumerals() {
         MerchantGalaxy merchantGalaxy = new MerchantGalaxy();
         String translatedRoman = merchantGalaxy.translateWordsToRomanNumerals("glob is I");

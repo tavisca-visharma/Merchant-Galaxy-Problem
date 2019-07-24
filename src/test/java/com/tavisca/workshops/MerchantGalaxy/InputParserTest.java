@@ -22,8 +22,13 @@ public class InputParserTest {
 
     @Test
     void canParseMetalToCreditStatement(){
+        WordToRomanParser wordToRomanParser = new WordToRomanParser();
+        wordToRomanParser.Parse("glob is I");
+        wordToRomanParser.Parse("prok is V");
+        wordToRomanParser.Parse("pish is X");
+        wordToRomanParser.Parse("tegj is L");
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
-        assertArrayEquals(new Object[]{"Silver",34},metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
+        assertArrayEquals(new String[]{"Silver","17"},metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
 
     }
 }

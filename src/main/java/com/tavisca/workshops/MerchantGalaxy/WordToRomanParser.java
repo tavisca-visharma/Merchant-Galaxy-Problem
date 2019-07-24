@@ -5,4 +5,5 @@ public class WordToRomanParser {
         String wordToRoman[] = languageStatement.split(" is ");
         return new String[]{wordToRoman[0], wordToRoman[1]};
     }
+
 }
