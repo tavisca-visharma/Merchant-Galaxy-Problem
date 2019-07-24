@@ -12,7 +12,7 @@ public class WordToRomanMapper {
     }
 
     public static String getRomanNumeralOfTheWord(String word){
-        System.out.println("word = " + word + " roman = " + wordToRoman.get(word));
+//        System.out.println("word = " + word + " roman = " + wordToRoman.get(word));
         return wordToRoman.get(word);
     }
 

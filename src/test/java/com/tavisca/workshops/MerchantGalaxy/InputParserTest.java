@@ -27,8 +27,10 @@ public class InputParserTest {
         wordToRomanParser.Parse("prok is V");
         wordToRomanParser.Parse("pish is X");
         wordToRomanParser.Parse("tegj is L");
+
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
-        assertArrayEquals(new String[]{"Silver","17"},metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
+        assertArrayEquals(new String[]{"Silver","17"},
+                metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
 
     }
 
@@ -39,9 +41,53 @@ public class InputParserTest {
         wordToRomanParser.Parse("prok is V");
         wordToRomanParser.Parse("pish is X");
         wordToRomanParser.Parse("tegj is L");
+
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
-        assertArrayEquals(new String[]{"Silver","17"},metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
-        assertArrayEquals(new String[]{"Gold","14450"},metalToCreditParser.Parse("glob prok Gold is 57800 Credits"));
+        assertArrayEquals(new String[]{"Silver","17"},
+                metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
+        assertArrayEquals(new String[]{"Gold","14450"},
+                metalToCreditParser.Parse("glob prok Gold is 57800 Credits"));
 
     }
+
+    @Test
+    void canParseMetalToCreditStatementTest3(){
+        WordToRomanParser wordToRomanParser = new WordToRomanParser();
+        wordToRomanParser.Parse("glob is I");
+        wordToRomanParser.Parse("prok is V");
+        wordToRomanParser.Parse("pish is X");
+        wordToRomanParser.Parse("tegj is L");
+
+        MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
+        assertArrayEquals(new String[]{"Silver","17"},
+                metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
+        assertArrayEquals(new String[]{"Gold","14450"},
+                metalToCreditParser.Parse("glob prok Gold is 57800 Credits"));
+        assertArrayEquals(new String[]{"Iron","195.5"},
+                metalToCreditParser.Parse("pish pish Iron is 3910 Credits"));
+
+    }
+
+    @Test
+    void canProvideAnswersToQuestionsAsked(){
+        WordToRomanParser wordToRomanParser = new WordToRomanParser();
+        wordToRomanParser.Parse("glob is I");
+        wordToRomanParser.Parse("prok is V");
+        wordToRomanParser.Parse("pish is X");
+        wordToRomanParser.Parse("tegj is L");
+
+        MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
+        assertArrayEquals(new String[]{"Silver","17"},
+                metalToCreditParser.Parse("glob glob Silver is 34 Credits"));
+        assertArrayEquals(new String[]{"Gold","14450"},
+                metalToCreditParser.Parse("glob prok Gold is 57800 Credits"));
+        assertArrayEquals(new String[]{"Iron","195.5"},
+                metalToCreditParser.Parse("pish pish Iron is 3910 Credits"));
+
+        QuestionToAnswerParser questionToAnswerParser = new QuestionToAnswerParser();
+        assertArrayEquals(new String[]{"pish tegj glob glob","42"},
+                questionToAnswerParser.Parse("how much is pish tegj glob glob ?"));
+
+    }
+
 }

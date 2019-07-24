@@ -11,7 +11,7 @@ public class MetalToCreditParser {
 
 
         double wordsValueCount = calculateWordsValueCount(words);
-        System.out.println("wordsValueCount = " + wordsValueCount);
+//        System.out.println("wordsValueCount = " + wordsValueCount);
 
         String metal = words[words.length - 1];
         double givenCreditsOfMetal = Double.parseDouble(credits[0]);
@@ -32,7 +32,7 @@ public class MetalToCreditParser {
         return decimalFormat.format(creditOfMetal);
     }
 
-    private double calculateWordsValueCount(String[] words) {
+    public static double calculateWordsValueCount(String[] words) {
         double valueCount = 0;
         double max = Double.MIN_VALUE;
         for (int i = words.length - 2; i >= 0; i--) {

@@ -12,7 +12,7 @@ public class MetalToCreditsMapper {
     }
 
     public static double getMetalCredits(String metal){
-        System.out.println("metal = " + metal + " credits = " + metalToCredits.get(metal));
+//        System.out.println("metal = " + metal + " credits = " + metalToCredits.get(metal));
         return metalToCredits.get(metal);
     }
 

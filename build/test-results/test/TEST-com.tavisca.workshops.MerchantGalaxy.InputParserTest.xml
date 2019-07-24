@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tavisca.workshops.MerchantGalaxy.InputParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-07-24T18:53:03" hostname="RENTLAPT0010" time="0.079">
+<testsuite name="com.tavisca.workshops.MerchantGalaxy.InputParserTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-07-24T19:36:21" hostname="RENTLAPT0010" time="0.054">
   <properties/>
-  <testcase name="canParseWordToRomanNumeralStatement()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.037"/>
-  <testcase name="canParseMetalToCreditStatementTest1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.033"/>
-  <testcase name="canParseMetalToCreditStatementTest2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.005"/>
-  <system-out><![CDATA[metal = glob credits = 1.0
-metal = glob credits = 1.0
-wordsValueCount = 2.0
-metal = glob credits = 1.0
-metal = glob credits = 1.0
-wordsValueCount = 2.0
-metal = prok credits = 5.0
-metal = glob credits = 1.0
-wordsValueCount = 4.0
-]]></system-out>
+  <testcase name="canParseWordToRomanNumeralStatement()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.027"/>
+  <testcase name="canParseMetalToCreditStatementTest1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.013"/>
+  <testcase name="canParseMetalToCreditStatementTest2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.001"/>
+  <testcase name="canParseMetalToCreditStatementTest3()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.002"/>
+  <testcase name="canProvideAnswersToQuestionsAsked()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
