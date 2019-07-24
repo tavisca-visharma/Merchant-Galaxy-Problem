@@ -10,25 +10,41 @@ public class MetalToCreditParser {
         String[] credits = metalToCredits[1].split(" ");
 
 
-        double wordsValueCount  = calculateWordsValueCount(words);
+        double wordsValueCount = calculateWordsValueCount(words);
+        System.out.println("wordsValueCount = " + wordsValueCount);
 
         String metal = words[words.length - 1];
         double givenCreditsOfMetal = Double.parseDouble(credits[0]);
 
-        double creditOfMetal = Double.parseDouble(getCreditsOfMetal(wordsValueCount, metal, givenCreditsOfMetal));
+        String creditOfMetal = getCreditsOfMetal(wordsValueCount, metal, givenCreditsOfMetal);
+
+        MetalToCreditsMapper.addMetalWithCredits(metal, Double.parseDouble(creditOfMetal));
 
         return new Object[]{metal, creditOfMetal};
     }
 
     private String getCreditsOfMetal(double wordsValueCount, String metal, double givenCreditsOfMetal) {
 
-        DecimalFormat decimalFormat = new DecimalFormat();
+        String pattern = "###########.###";
+        DecimalFormat decimalFormat = new DecimalFormat(pattern);
         decimalFormat.setDecimalSeparatorAlwaysShown(false);
         double creditOfMetal = givenCreditsOfMetal / wordsValueCount;
         return decimalFormat.format(creditOfMetal);
     }
 
     private double calculateWordsValueCount(String[] words) {
-        return 1;
+        double valueCount = 0;
+        double max = Double.MIN_VALUE;
+        for (int i = words.length - 2; i >= 0; i--) {
+            double currentLiteralValue = MetalToCreditsMapper.getMetalCredits(words[i]);
+            if (currentLiteralValue < max) {
+                valueCount -= currentLiteralValue;
+            }
+            else {
+                valueCount += currentLiteralValue;
+                max = currentLiteralValue;
+            }
+        }
+        return valueCount;
     }
 }

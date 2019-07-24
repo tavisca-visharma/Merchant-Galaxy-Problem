@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa46240-0b0d-4d76-a7b4-3ea832194d16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/tavisca/workshops/MerchantGalaxy/InputParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/tavisca/workshops/MerchantGalaxy/InputParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/tavisca/workshops/MerchantGalaxy/MerchantGalaxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/tavisca/workshops/MerchantGalaxy/MerchantGalaxyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.tavisca.workshops.MerchantGalaxy.InputParserTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.tavisca.workshops.MerchantGalaxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.tavisca.workshops.MerchantGalaxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.tavisca.workshops.MerchantGalaxy.InputParserTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.tavisca.workshops.MerchantGalaxy.ArabicNumeralToRomanParserTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.tavisca.workshops.MerchantGalaxy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.tavisca.workshops.MerchantGalaxy.ArabicNumeralToRomanParserTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/MerchantGalaxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/MerchantGalaxyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pratham-jvm1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pratham-jvm1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pratham-jvm1/src/main/java/com/tavisca/workshops/pratham/marsrover/MyMarsRoboRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pratham-jvm1/src/main/java/com/tavisca/workshops/pratham/marsrover/MyMarsRoboRover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pratham-jvm1/src/main/java/com/tavisca/workshops/pratham/marsrover/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pratham-jvm1/src/main/java/com/tavisca/workshops/pratham/marsrover/Position.java" afterDir="false" />
@@ -75,10 +63,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/MerchantGalaxyTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="26">
+              <caret line="43" column="77" lean-forward="true" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,10 +75,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="-89">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,26 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="17" column="113" selection-start-line="17" selection-start-column="113" selection-end-line="17" selection-end-column="113" />
-              <folding>
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -135,8 +116,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+            <state relative-caret-position="127">
+              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditsMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/RomanToCreditMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-36">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -177,14 +176,15 @@
         <option value="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/MerchantGalaxyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanNumeralMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/RomanToCreditMapper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/RomanToCreditMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/ItemToCreditMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java" />
       </list>
     </option>
   </component>
@@ -274,12 +274,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vlsharma\IdeaProjects\MerchantGalaxy\src\main\java\com\tavisca\workshops\MerchantGalaxy" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tavisca.workshops.MerchantGalaxy" />
     </key>
@@ -296,20 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ArabicNumeralToRomanParserTest">
-    <configuration name="ArabicNumeralToRomanParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tavisca.workshops.MerchantGalaxy.ArabicNumeralToRomanParser" />
-      <module name="MerchantGalaxy.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tavisca.workshops.MerchantGalaxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.InputParserTest">
     <configuration name="ArabicNumeralToRomanParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -370,6 +360,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="InputParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.tavisca.workshops.MerchantGalaxy.InputParserTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="InputParserTest.canParseMetalToCreditStatement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -392,11 +402,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InputParserTest" />
+        <item itemvalue="Gradle.InputParserTest.canParseMetalToCreditStatement" />
         <item itemvalue="Gradle.ArabicNumeralToRomanParserTest" />
         <item itemvalue="Gradle.ArabicNumeralToRomanParserTest.canParseArabicNumeralIntoRomanNumberTest2" />
         <item itemvalue="Gradle.ArabicNumeralToRomanParserTest.canParseArabicNumeralIntoRomanNumber" />
-        <item itemvalue="Application.ArabicNumeralToRomanParser" />
-        <item itemvalue="Gradle.InputParserTest.canParseMetalToCreditStatement" />
       </list>
     </recent_temporary>
   </component>
@@ -414,35 +424,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InputParserTest - 2019.07.24 at 16h 46m 33s.xml">
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 09m 24s.xml">
       <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="InputParserTest - 2019.07.24 at 16h 58m 17s.xml">
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 09m 53s.xml">
       <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="InputParserTest_canParseMetalToCreditStatement - 2019.07.24 at 17h 03m 25s.xml">
-      <configuration name="InputParserTest.canParseMetalToCreditStatement" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="InputParserTest_canParseMetalToCreditStatement - 2019.07.24 at 17h 03m 52s.xml">
-      <configuration name="InputParserTest.canParseMetalToCreditStatement" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="InputParserTest - 2019.07.24 at 18h 50m 57s.xml">
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 10m 39s.xml">
       <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="InputParserTest_canParseMetalToCreditStatement - 2019.07.24 at 20h 51m 31s.xml">
-      <configuration name="InputParserTest.canParseMetalToCreditStatement" configurationId="GradleRunConfiguration" />
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 15m 17s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="InputParserTest_canParseMetalToCreditStatement - 2019.07.24 at 21h 00m 39s.xml">
-      <configuration name="InputParserTest.canParseMetalToCreditStatement" configurationId="GradleRunConfiguration" />
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 16m 28s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="InputParserTest_canParseMetalToCreditStatement - 2019.07.24 at 21h 01m 59s.xml">
-      <configuration name="InputParserTest.canParseMetalToCreditStatement" configurationId="GradleRunConfiguration" />
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 16m 51s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="InputParserTest_canParseMetalToCreditStatement - 2019.07.24 at 21h 03m 42s.xml">
-      <configuration name="InputParserTest.canParseMetalToCreditStatement" configurationId="GradleRunConfiguration" />
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 17m 16s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ArabicNumeralToRomanParserTest_canParseArabicNumeralIntoRomanNumber - 2019.07.24 at 23h 30m 59s.xml">
-      <configuration name="ArabicNumeralToRomanParserTest.canParseArabicNumeralIntoRomanNumber" configurationId="GradleRunConfiguration" />
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 17m 24s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 17m 39s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="InputParserTest - 2019.07.25 at 00h 18m 16s.xml">
+      <configuration name="InputParserTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -458,8 +468,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42062193" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5564648" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -520,49 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/RomanToCreditMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="17" column="113" selection-start-line="17" selection-start-column="113" selection-end-line="17" selection-end-column="113" />
-          <folding>
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -570,23 +537,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/ArabicNumeralToRomanParserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/RomanToCreditMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        <state relative-caret-position="-36">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="542" column="31" selection-start-line="542" selection-start-column="31" selection-end-line="542" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/WordToRomanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tavisca/workshops/MerchantGalaxy/InputParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="43" column="77" lean-forward="true" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tavisca/workshops/MerchantGalaxy/MetalToCreditParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
