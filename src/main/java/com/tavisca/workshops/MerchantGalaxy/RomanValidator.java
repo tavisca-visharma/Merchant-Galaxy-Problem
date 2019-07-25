@@ -40,7 +40,7 @@ public class RomanValidator {
             }
             if (romanNumeral.charAt(i) == 'D' || romanNumeral.charAt(i) == 'L' || romanNumeral.charAt(i) == 'V') {
                 if (romanNumeral.charAt(i) == romanNumeral.charAt(i + 1)) {
-//                    System.out.println("Hello 5");
+//                    System.out.println("Hello 5 " + romanNumeral.charAt(i) + " " + romanNumeral.charAt(i+1));
                     return false;
                 }
                 double currentRomanLiteral = RomanToCreditMapper.getRomanCredits("" + romanNumeral.charAt(i));

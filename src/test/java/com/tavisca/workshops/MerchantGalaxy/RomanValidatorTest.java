@@ -27,4 +27,28 @@ public class RomanValidatorTest {
         assertTrue(RomanValidator.validateRomanNumeral("MCMXLIV"));
 
     }
+
+    @Test
+    void cannotValidateWrongSequenceOfRomanLiterals1(){
+        assertFalse(RomanValidator.validateRomanNumeral("XXXX"));
+
+    }
+    @Test
+    void cannotValidateWrongSequenceOfRomanLiterals2(){
+        assertFalse(RomanValidator.validateRomanNumeral("IL"));
+
+    }
+
+    @Test
+    void cannotValidateWrongSequenceOfRomanLiterals3(){
+        assertFalse(RomanValidator.validateRomanNumeral("VV"));
+        assertFalse(RomanValidator.validateRomanNumeral("DD"));
+        assertFalse(RomanValidator.validateRomanNumeral("LL"));
+
+    }
+    @Test
+    void cannotValidateWrongSequenceOfRomanLiterals4(){
+        assertFalse(RomanValidator.validateRomanNumeral("IIVVMM"));
+    }
+
 }
