@@ -2,17 +2,24 @@ package com.tavisca.workshops.MerchantGalaxy.Mapper;
 
 import java.util.HashMap;
 
-public class MetalToCreditsMapper {
-    private static HashMap<String,Double> metalToCredits = new HashMap<>();
+public class MetalToCreditsMapper implements IMapper {
+    private static HashMap<String,String> metalToCredits;
 
-    public static void addMetalWithCredits(String metal, double credits){
+    public MetalToCreditsMapper(){
+        metalToCredits = new HashMap<>();
+    }
 
-        metalToCredits.put(metal,credits);
+    public boolean selectMapper(String mapperName) {
+        return mapperName.equalsIgnoreCase(MappersName.metalMapperName);
+    }
+
+    public void addItemWithCredits(String metal, String metalCredits){
+
+        metalToCredits.put(metal,metalCredits);
 
     }
 
-    public static double getMetalCredits(String metal){
-//        System.out.println("metal = " + metal + " credits = " + metalToCredits.get(metal));
+    public String get(String metal){
         return metalToCredits.get(metal);
     }
 

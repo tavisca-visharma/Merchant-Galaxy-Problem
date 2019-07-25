@@ -1,7 +1,7 @@
 package com.tavisca.workshops.MerchantGalaxy.Parsers;
 
-import com.tavisca.workshops.MerchantGalaxy.Mapper.MetalToCreditsMapper;
-import com.tavisca.workshops.MerchantGalaxy.Mapper.WordToRomanMapper;
+import com.tavisca.workshops.MerchantGalaxy.Mapper.Mapper;
+import com.tavisca.workshops.MerchantGalaxy.Mapper.MappersName;
 import com.tavisca.workshops.MerchantGalaxy.Validator.RomanValidator;
 
 import java.text.DecimalFormat;
@@ -10,14 +10,16 @@ public class QuestionToAnswerParser implements IParser {
 
     DecimalFormat decimalFormat;
     String questionType;
+    Mapper mapper;
 
     public QuestionToAnswerParser() {
         decimalFormat = new DecimalFormat("#########.###");
         decimalFormat.setDecimalSeparatorAlwaysShown(false);
+        mapper = Mapper.getInstance();
     }
 
     public boolean select(String parserName) {
-        return parserName.equalsIgnoreCase("questionToAnswer");
+        return parserName.equalsIgnoreCase(ParserLanguageType.QuestionToAnswer);
     }
 
     public Object[] Parse(String questionStatement) {
@@ -61,17 +63,18 @@ public class QuestionToAnswerParser implements IParser {
             throw new RuntimeException("Invalid Roman Literal");
         }
 
-        double metalValue = MetalToCreditsMapper.getMetalCredits(words[words.length - 1]);
+        double metalValue = Double.parseDouble(mapper.getItemValue(MappersName.metalMapperName, words[words.length - 1]));
 
         return decimalFormat.format(wordsValue * metalValue);
     }
-    private static Object[] calculateWordsValueCount(String[] words) {
+
+    private Object[] calculateWordsValueCount(String[] words) {
         double valueCount = 0;
         double max = Double.MIN_VALUE;
         String resultedRoman = "";
         for (int i = words.length - 2; i >= 0; i--) {
-            resultedRoman = WordToRomanMapper.getRomanNumeralOfTheWord(words[i]) + resultedRoman;
-            double currentLiteralValue = MetalToCreditsMapper.getMetalCredits(words[i]);
+            resultedRoman = mapper.getItemValue(MappersName.wordToRomanNumeralMapperName,words[i]) + resultedRoman;
+            double currentLiteralValue = Double.parseDouble(mapper.getItemValue(MappersName.metalMapperName,words[i]));
             if (currentLiteralValue < max) {
                 valueCount -= currentLiteralValue;
             } else {
@@ -89,7 +92,7 @@ public class QuestionToAnswerParser implements IParser {
         double valueCount = 0;
         double max = Double.MIN_VALUE;
         for (int i = words.length - 1; i >= 0; i--) {
-            double currentLiteralValue = MetalToCreditsMapper.getMetalCredits(words[i]);
+            double currentLiteralValue = Double.parseDouble(mapper.getItemValue(MappersName.metalMapperName,words[i]));
             if (currentLiteralValue < max) {
                 valueCount -= currentLiteralValue;
             } else {

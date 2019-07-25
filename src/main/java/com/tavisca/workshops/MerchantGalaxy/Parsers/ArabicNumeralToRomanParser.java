@@ -1,5 +1,6 @@
 package com.tavisca.workshops.MerchantGalaxy.Parsers;
 
+import com.tavisca.workshops.MerchantGalaxy.Mapper.MappersName;
 import java.util.HashMap;
 
 public class ArabicNumeralToRomanParser implements IParser{
@@ -17,7 +18,7 @@ public class ArabicNumeralToRomanParser implements IParser{
     }};
 
     public boolean select(String parserName) {
-        return parserName.equalsIgnoreCase("arabicNumeralToRomanNumeral");
+        return parserName.equalsIgnoreCase(ParserLanguageType.ArabicNumeralToRomanNumeralMapper);
     }
 
     public Object[] Parse(String arabicNumber) {

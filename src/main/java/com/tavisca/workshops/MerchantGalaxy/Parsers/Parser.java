@@ -6,17 +6,22 @@ import java.util.List;
 public class Parser {
 
     List<IParser> parsers;
-    private static final String TYPE1 = "wordToRomanNumeral";
-    private static final String TYPE2 = "metalToCredit";
-    private static final String TYPE3 = "questionToAnswer";
+    static Parser parser = null;
 
 
-    public Parser() {
+
+    private Parser() {
         parsers = new ArrayList<>();
         parsers.add(new ArabicNumeralToRomanParser());
         parsers.add(new MetalToCreditParser());
         parsers.add(new QuestionToAnswerParser());
         parsers.add(new WordToRomanNumeralParser());
+    }
+
+    public static Parser getInstance(){
+        if(parser == null)
+            parser = new Parser();
+        return parser;
     }
 
     public Object[] Parse(String languageStatement) {
@@ -27,11 +32,11 @@ public class Parser {
     private String getLanguageType(String languageStatement){
         String languageType;
         if (languageStatement.split(" ").length == 3)
-            languageType = TYPE1;
+            languageType = ParserLanguageType.WordToRomanNumeral;
         else if (languageStatement.contains("?"))
-            languageType = TYPE3;
+            languageType = ParserLanguageType.QuestionToAnswer;
         else
-            languageType = TYPE2;
+            languageType = ParserLanguageType.MetalToCredit;
         return languageType;
     }
 

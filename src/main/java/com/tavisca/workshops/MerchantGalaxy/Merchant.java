@@ -9,10 +9,10 @@ public class Merchant {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String languageStatement = null;
-        System.out.println("\n\nHello, I am a Merchant.\n I am eager to help you." +
+        System.out.println("\n\n\n\nHello, I am a Merchant.\n I am eager to help you." +
                 " \n I am Listening to Your queries and facts (enter \'quit\' to exit) ....");
 
-        Parser parser = new Parser();
+        Parser parser = Parser.getInstance();
         while (!(languageStatement = scanner.nextLine()).equals("quit")) {
             try {
                 Object[] results = parser.Parse(languageStatement);

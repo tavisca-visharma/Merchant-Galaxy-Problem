@@ -1,7 +1,6 @@
 package com.tavisca.workshops.MerchantGalaxy.Parsers;
 
-import com.tavisca.workshops.MerchantGalaxy.Mapper.MetalToCreditsMapper;
-import com.tavisca.workshops.MerchantGalaxy.Mapper.WordToRomanMapper;
+import com.tavisca.workshops.MerchantGalaxy.Mapper.*;
 import com.tavisca.workshops.MerchantGalaxy.Validator.RomanValidator;
 
 import java.text.DecimalFormat;
@@ -11,15 +10,17 @@ public class MetalToCreditParser implements IParser {
     String[] words;
     String[] credits;
     DecimalFormat decimalFormat;
+    Mapper mapper;
 
     public MetalToCreditParser() {
         String pattern = "###########.###";
         decimalFormat = new DecimalFormat(pattern);
         decimalFormat.setDecimalSeparatorAlwaysShown(false);
+        mapper = Mapper.getInstance();
     }
 
     public boolean select(String parserName) {
-        return parserName.equalsIgnoreCase("metalToCredit");
+        return parserName.equalsIgnoreCase(ParserLanguageType.MetalToCredit);
     }
 
     public Object[] Parse(String languageStatement) {
@@ -38,7 +39,7 @@ public class MetalToCreditParser implements IParser {
 
         String creditOfMetal = getCreditsOfMetal(wordsValueCount, metal, givenCreditsOfMetal);
 
-        MetalToCreditsMapper.addMetalWithCredits(metal, Double.parseDouble(creditOfMetal));
+        mapper.addItem(MappersName.metalMapperName,metal, creditOfMetal);
 
         return new Object[]{metal, creditOfMetal};
     }
@@ -54,13 +55,13 @@ public class MetalToCreditParser implements IParser {
         return decimalFormat.format(creditOfMetal);
     }
 
-    private static Object[] calculateWordsValueCount(String[] words) {
+    private Object[] calculateWordsValueCount(String[] words) {
         double valueCount = 0;
         double max = Double.MIN_VALUE;
         String resultedRoman = "";
         for (int i = words.length - 2; i >= 0; i--) {
-            resultedRoman = WordToRomanMapper.getRomanNumeralOfTheWord(words[i]) + resultedRoman;
-            double currentLiteralValue = MetalToCreditsMapper.getMetalCredits(words[i]);
+            resultedRoman = mapper.getItemValue(MappersName.wordToRomanNumeralMapperName,words[i]) + resultedRoman;
+            double currentLiteralValue = Double.parseDouble(mapper.getItemValue(MappersName.metalMapperName,words[i]));
             if (currentLiteralValue < max) {
                 valueCount -= currentLiteralValue;
             } else {
@@ -70,4 +71,5 @@ public class MetalToCreditParser implements IParser {
         }
         return new Object[]{resultedRoman, valueCount};
     }
+
 }

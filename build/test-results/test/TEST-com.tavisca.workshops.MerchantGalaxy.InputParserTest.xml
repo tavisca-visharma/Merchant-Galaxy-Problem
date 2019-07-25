@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tavisca.workshops.MerchantGalaxy.InputParserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-25T12:54:25" hostname="RENTLAPT0010" time="0.138">
+<testsuite name="com.tavisca.workshops.MerchantGalaxy.InputParserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-25T19:50:13" hostname="RENTLAPT0010" time="0.06">
   <properties/>
-  <testcase name="canProvideAnswersToQuestionsAsked1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.088"/>
+  <testcase name="canProvideAnswersToQuestionsAsked1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.032"/>
   <testcase name="canProvideAnswersToQuestionsAsked2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.003"/>
-  <testcase name="canParseWordToRomanNumeralStatement()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.001"/>
-  <testcase name="canParseMetalToCreditStatementTest1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.008"/>
-  <testcase name="canParseMetalToCreditStatementTest2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.005"/>
+  <testcase name="canParseWordToRomanNumeralStatement()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.002"/>
+  <testcase name="canParseMetalToCreditStatementTest1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.003"/>
+  <testcase name="canParseMetalToCreditStatementTest2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.001"/>
   <testcase name="canParseMetalToCreditStatementTest3()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.002"/>
-  <testcase name="cannotProvideAnswersToIrrelevantQuestions1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.004"/>
-  <testcase name="cannotProvideAnswersToIrrelevantQuestions2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.001"/>
+  <testcase name="cannotProvideAnswersToIrrelevantQuestions1()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.003"/>
+  <testcase name="cannotProvideAnswersToIrrelevantQuestions2()" classname="com.tavisca.workshops.MerchantGalaxy.InputParserTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

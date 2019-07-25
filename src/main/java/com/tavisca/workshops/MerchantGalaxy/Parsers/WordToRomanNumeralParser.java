@@ -1,10 +1,17 @@
 package com.tavisca.workshops.MerchantGalaxy.Parsers;
 
-import com.tavisca.workshops.MerchantGalaxy.Mapper.MetalToCreditsMapper;
-import com.tavisca.workshops.MerchantGalaxy.Mapper.RomanToCreditMapper;
-import com.tavisca.workshops.MerchantGalaxy.Mapper.WordToRomanMapper;
+import com.tavisca.workshops.MerchantGalaxy.Mapper.*;
 
 public class WordToRomanNumeralParser implements IParser {
+    Mapper mapper;
+
+    public boolean select(String parserName) {
+        return parserName.equalsIgnoreCase(ParserLanguageType.WordToRomanNumeral);
+    }
+
+    public WordToRomanNumeralParser(){
+        mapper = Mapper.getInstance();
+    }
 
     public Object[] Parse(String languageStatement) {
         String wordToRoman[] = languageStatement.split(" is ");
@@ -13,14 +20,10 @@ public class WordToRomanNumeralParser implements IParser {
     }
 
     private void addWordToCurrentDataset(String word, String romanNumeral) {
-        WordToRomanMapper.addWordWithRomanNumeral(word,romanNumeral);
-        double romanCredits = RomanToCreditMapper.getRomanCredits(romanNumeral);
-        MetalToCreditsMapper.addMetalWithCredits(word,romanCredits);
+        mapper.addItem(MappersName.wordToRomanNumeralMapperName,word,romanNumeral);
+        String romanCredits = mapper.getItemValue(MappersName.romanNumeralToCreditMapper,romanNumeral);
+        mapper.addItem(MappersName.metalMapperName,word,romanCredits);
 
-    }
-
-    public boolean select(String parserName) {
-        return parserName.equalsIgnoreCase("wordToRomanNumeral");
     }
 
 }
