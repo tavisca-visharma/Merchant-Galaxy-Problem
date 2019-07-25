@@ -3,7 +3,7 @@ package com.tavisca.workshops.MerchantGalaxy.Mapper;
 import java.util.HashMap;
 
 public class WordToRomanNumeralMapper implements IMapper {
-    private static HashMap<String, String> wordToRomanNumeral;
+    private HashMap<String, String> wordToRomanNumeral;
 
     WordToRomanNumeralMapper() {
         wordToRomanNumeral = new HashMap<>();

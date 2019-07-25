@@ -3,7 +3,7 @@ package com.tavisca.workshops.MerchantGalaxy.Mapper;
 import java.util.HashMap;
 
 public class MetalToCreditsMapper implements IMapper {
-    private static HashMap<String,String> metalToCredits;
+    private HashMap<String,String> metalToCredits;
 
     public MetalToCreditsMapper(){
         metalToCredits = new HashMap<>();

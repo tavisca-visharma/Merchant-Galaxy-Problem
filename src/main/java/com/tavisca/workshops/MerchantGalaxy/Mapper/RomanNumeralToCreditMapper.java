@@ -3,7 +3,7 @@ package com.tavisca.workshops.MerchantGalaxy.Mapper;
 import java.util.HashMap;
 
 public class RomanNumeralToCreditMapper implements IMapper {
-    private static HashMap<String, String> romanNumeralToCredits;
+    private HashMap<String, String> romanNumeralToCredits;
 
     RomanNumeralToCreditMapper(){
         romanNumeralToCredits = new HashMap<>() {{
