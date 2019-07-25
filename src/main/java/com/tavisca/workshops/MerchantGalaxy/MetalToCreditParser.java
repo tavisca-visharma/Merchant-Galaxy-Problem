@@ -10,8 +10,15 @@ public class MetalToCreditParser {
         String[] credits = metalToCredits[1].split(" ");
 
 
-        double wordsValueCount = calculateWordsValueCount(words);
+        Object[] resultedRomanWithValue = calculateWordsValueCount(words);
+        String resultedRomanNumeral = (String)resultedRomanWithValue[0];
+        double wordsValueCount = (double)resultedRomanWithValue[1];
 //        System.out.println("wordsValueCount = " + wordsValueCount);
+
+        if(RomanValidator.validateRomanNumeral(resultedRomanNumeral) == false){
+            System.out.println("resultedRomanNumeral = " + resultedRomanNumeral);
+            throw new RuntimeException("Invalid Roman Numeral");
+        }
 
         String metal = words[words.length - 1];
         double givenCreditsOfMetal = Double.parseDouble(credits[0]);
@@ -32,10 +39,12 @@ public class MetalToCreditParser {
         return decimalFormat.format(creditOfMetal);
     }
 
-    public static double calculateWordsValueCount(String[] words) {
+    public static Object[] calculateWordsValueCount(String[] words) {
         double valueCount = 0;
         double max = Double.MIN_VALUE;
+        String resultedRoman = "";
         for (int i = words.length - 2; i >= 0; i--) {
+            resultedRoman = WordToRomanMapper.getRomanNumeralOfTheWord(words[i]) + resultedRoman;
             double currentLiteralValue = MetalToCreditsMapper.getMetalCredits(words[i]);
             if (currentLiteralValue < max) {
                 valueCount -= currentLiteralValue;
@@ -45,6 +54,6 @@ public class MetalToCreditParser {
                 max = currentLiteralValue;
             }
         }
-        return valueCount;
+        return new Object[] { resultedRoman , valueCount};
     }
 }

@@ -27,7 +27,14 @@ public class QuestionToAnswerParser {
 
         String[] words = wordsWhoseValueToCalculate.split(" ");
 
-        double wordsValue = MetalToCreditParser.calculateWordsValueCount(words);
+        Object[] wordsParsedInRomanWithValue = MetalToCreditParser.calculateWordsValueCount(words);
+        String resultedRomanNumeral = (String)wordsParsedInRomanWithValue[0];
+        double wordsValue = (double)wordsParsedInRomanWithValue[1];
+
+        if(RomanValidator.validateRomanNumeral(resultedRomanNumeral) == false){
+            throw new RuntimeException("Invalid Roman Literal");
+        }
+
         double metalValue = MetalToCreditsMapper.getMetalCredits(words[words.length - 1]);
 
         DecimalFormat decimalFormat = new DecimalFormat("#########.###");
