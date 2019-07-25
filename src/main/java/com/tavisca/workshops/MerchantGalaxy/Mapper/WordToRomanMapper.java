@@ -1,4 +1,4 @@
-package com.tavisca.workshops.MerchantGalaxy;
+package com.tavisca.workshops.MerchantGalaxy.Mapper;
 
 import java.util.HashMap;
 

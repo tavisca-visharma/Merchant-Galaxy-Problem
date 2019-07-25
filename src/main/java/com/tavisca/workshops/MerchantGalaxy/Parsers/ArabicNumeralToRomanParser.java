@@ -1,8 +1,8 @@
-package com.tavisca.workshops.MerchantGalaxy;
+package com.tavisca.workshops.MerchantGalaxy.Parsers;
 
 import java.util.HashMap;
 
-public class ArabicNumeralToRomanParser {
+public class ArabicNumeralToRomanParser implements IParser{
 
     private HashMap<Integer, String> numberToRoman
             = new HashMap<>() {{
@@ -16,8 +16,12 @@ public class ArabicNumeralToRomanParser {
 
     }};
 
-    public String Parse(int arabicNumeral) {
+    public boolean select(String parserName) {
+        return parserName.equalsIgnoreCase("arabicNumeralToRomanNumeral");
+    }
 
+    public Object[] Parse(String arabicNumber) {
+        int arabicNumeral = Integer.parseInt(arabicNumber);
         String romanNumber = "";
         while (arabicNumeral > 0) {
             int count = countDigits(arabicNumeral);
@@ -48,7 +52,7 @@ public class ArabicNumeralToRomanParser {
             }
             arabicNumeral = arabicNumeral % divisor;
         }
-        return romanNumber;
+        return new Object[]{romanNumber};
     }
 
     private int countDigits(int arabicNumeral) {
@@ -60,4 +64,5 @@ public class ArabicNumeralToRomanParser {
         }
         return count;
     }
+
 }

@@ -1,5 +1,6 @@
 package com.tavisca.workshops.MerchantGalaxy;
 
+import com.tavisca.workshops.MerchantGalaxy.Validator.RomanValidator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -49,6 +50,11 @@ public class RomanValidatorTest {
     @Test
     void cannotValidateWrongSequenceOfRomanLiterals4(){
         assertFalse(RomanValidator.validateRomanNumeral("IIVVMM"));
+    }
+
+    @Test
+    void cannotValidateWrongSequenceOfRomanLiterals5(){
+        assertFalse(RomanValidator.validateRomanNumeral("MXCDL"));
     }
 
 }

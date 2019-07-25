@@ -1,5 +1,8 @@
 package com.tavisca.workshops.MerchantGalaxy;
 
+import com.tavisca.workshops.MerchantGalaxy.Parsers.MetalToCreditParser;
+import com.tavisca.workshops.MerchantGalaxy.Parsers.QuestionToAnswerParser;
+import com.tavisca.workshops.MerchantGalaxy.Parsers.WordToRomanNumeralParser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -9,25 +12,25 @@ public class InputParserTest {
 
     @Test
     void canParseWordToRomanNumeralStatement() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
         assertArrayEquals(new String[]{"glob", "I"},
-                wordToRomanParser.Parse("glob is I"));
+                wordToRomanNumeralParser.Parse("glob is I"));
         assertArrayEquals(new String[]{"prok", "V"},
-                wordToRomanParser.Parse("prok is V"));
+                wordToRomanNumeralParser.Parse("prok is V"));
         assertArrayEquals(new String[]{"pish", "X"},
-                wordToRomanParser.Parse("pish is X"));
+                wordToRomanNumeralParser.Parse("pish is X"));
         assertArrayEquals(new String[]{"tegj", "L"},
-                wordToRomanParser.Parse("tegj is L"));
+                wordToRomanNumeralParser.Parse("tegj is L"));
 
     }
 
     @Test
     void canParseMetalToCreditStatementTest1() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        wordToRomanParser.Parse("glob is I");
-        wordToRomanParser.Parse("prok is V");
-        wordToRomanParser.Parse("pish is X");
-        wordToRomanParser.Parse("tegj is L");
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
+        wordToRomanNumeralParser.Parse("glob is I");
+        wordToRomanNumeralParser.Parse("prok is V");
+        wordToRomanNumeralParser.Parse("pish is X");
+        wordToRomanNumeralParser.Parse("tegj is L");
 
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
         assertArrayEquals(new String[]{"Silver", "17"},
@@ -37,11 +40,11 @@ public class InputParserTest {
 
     @Test
     void canParseMetalToCreditStatementTest2() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        wordToRomanParser.Parse("glob is I");
-        wordToRomanParser.Parse("prok is V");
-        wordToRomanParser.Parse("pish is X");
-        wordToRomanParser.Parse("tegj is L");
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
+        wordToRomanNumeralParser.Parse("glob is I");
+        wordToRomanNumeralParser.Parse("prok is V");
+        wordToRomanNumeralParser.Parse("pish is X");
+        wordToRomanNumeralParser.Parse("tegj is L");
 
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
         assertArrayEquals(new String[]{"Silver", "17"},
@@ -53,11 +56,11 @@ public class InputParserTest {
 
     @Test
     void canParseMetalToCreditStatementTest3() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        wordToRomanParser.Parse("glob is I");
-        wordToRomanParser.Parse("prok is V");
-        wordToRomanParser.Parse("pish is X");
-        wordToRomanParser.Parse("tegj is L");
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
+        wordToRomanNumeralParser.Parse("glob is I");
+        wordToRomanNumeralParser.Parse("prok is V");
+        wordToRomanNumeralParser.Parse("pish is X");
+        wordToRomanNumeralParser.Parse("tegj is L");
 
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
         assertArrayEquals(new String[]{"Silver", "17"},
@@ -71,11 +74,11 @@ public class InputParserTest {
 
     @Test
     void canProvideAnswersToQuestionsAsked1() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        wordToRomanParser.Parse("glob is I");
-        wordToRomanParser.Parse("prok is V");
-        wordToRomanParser.Parse("pish is X");
-        wordToRomanParser.Parse("tegj is L");
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
+        wordToRomanNumeralParser.Parse("glob is I");
+        wordToRomanNumeralParser.Parse("prok is V");
+        wordToRomanNumeralParser.Parse("pish is X");
+        wordToRomanNumeralParser.Parse("tegj is L");
 
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
         assertArrayEquals(new String[]{"Silver", "17"},
@@ -93,11 +96,11 @@ public class InputParserTest {
 
     @Test
     void canProvideAnswersToQuestionsAsked2() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        wordToRomanParser.Parse("glob is I");
-        wordToRomanParser.Parse("prok is V");
-        wordToRomanParser.Parse("pish is X");
-        wordToRomanParser.Parse("tegj is L");
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
+        wordToRomanNumeralParser.Parse("glob is I");
+        wordToRomanNumeralParser.Parse("prok is V");
+        wordToRomanNumeralParser.Parse("pish is X");
+        wordToRomanNumeralParser.Parse("tegj is L");
 
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
         assertArrayEquals(new String[]{"Silver", "17"},
@@ -119,11 +122,11 @@ public class InputParserTest {
 
     @Test
     void cannotProvideAnswersToIrrelevantQuestions1() {
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        wordToRomanParser.Parse("glob is I");
-        wordToRomanParser.Parse("prok is V");
-        wordToRomanParser.Parse("pish is X");
-        wordToRomanParser.Parse("tegj is L");
+        WordToRomanNumeralParser wordToRomanNumeralParser = new WordToRomanNumeralParser();
+        wordToRomanNumeralParser.Parse("glob is I");
+        wordToRomanNumeralParser.Parse("prok is V");
+        wordToRomanNumeralParser.Parse("pish is X");
+        wordToRomanNumeralParser.Parse("tegj is L");
 
         MetalToCreditParser metalToCreditParser = new MetalToCreditParser();
         assertArrayEquals(new String[]{"Silver", "17"},
