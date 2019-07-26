@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-25T20:00:09" hostname="RENTLAPT0010" time="0.014">
+<testsuite name="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-26T10:01:43" hostname="RENTLAPT0010" time="0.02">
   <properties/>
-  <testcase name="canValidateSequenceOfRomanLiterals1()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.002"/>
+  <testcase name="canValidateSequenceOfRomanLiterals1()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.001"/>
   <testcase name="canValidateSequenceOfRomanLiterals2()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.001"/>
-  <testcase name="canValidateTheSingleRomanLiteral()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.002"/>
-  <testcase name="cannotValidateWrongSequenceOfRomanLiterals1()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.002"/>
+  <testcase name="canValidateTheSingleRomanLiteral()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.003"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals1()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.003"/>
   <testcase name="cannotValidateWrongSequenceOfRomanLiterals2()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.001"/>
   <testcase name="cannotValidateWrongSequenceOfRomanLiterals3()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.001"/>
-  <testcase name="cannotValidateWrongSequenceOfRomanLiterals4()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.001"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals4()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.0"/>
   <testcase name="cannotValidateWrongSequenceOfRomanLiterals5()" classname="com.tavisca.workshops.MerchantGalaxy.RomanValidatorTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -8,8 +8,6 @@ public class Parser {
     List<IParser> parsers;
     static Parser parser = null;
 
-
-
     private Parser() {
         parsers = new ArrayList<>();
         parsers.add(new ArabicNumeralToRomanParser());
@@ -33,10 +31,12 @@ public class Parser {
         String languageType;
         if (languageStatement.split(" ").length == 3)
             languageType = ParserLanguageType.WordToRomanNumeral;
-        else if (languageStatement.contains("?"))
+        else if (languageStatement.contains("?") && languageStatement.contains("how"))
             languageType = ParserLanguageType.QuestionToAnswer;
-        else
+        else if(!languageStatement.contains("?"))
             languageType = ParserLanguageType.MetalToCredit;
+        else
+            throw new RuntimeException("Can't Parse the Language.");
         return languageType;
     }
 
