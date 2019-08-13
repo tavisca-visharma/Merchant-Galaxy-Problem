@@ -1,52 +1,13 @@
 pipeline {
-    agent any
+    agent {
+	label "machine"}
     stages {
         stage('Build') {
             steps {
-                sh script: '''
-                    echo "I am in build step"
-					echo "$(pwd)"
-					cd ../../ && gradlew build
-                ''',
-            label: "Building Project"
+                powershell label: 'Building Project', script: '.\\gradlew.bat build'
             }
         }
-        stage('Test')
-        {
-            steps {
-                sh script: '''
-                    echo "I am in Test step"
-                ''',
-            label: "Running Unit Test Cases"
-            }
-        }
-        stage('Static Code Analysis')
-        {
-            steps {
-                sh script: '''
-                    echo "I am in Sonarqube scan"
-                ''',
-            label: "Running Sonarqube Scan"
-            }
-        }
-        stage('Build DockerImage')
-        {
-            steps {
-                sh script: '''
-                    echo "I am Building DockerImage ="
-                ''',
-            label: "Building Docker Image"
-            }
-        }
-        stage('Publish DockerImage')
-        {
-            steps {
-                sh script: '''
-                    echo "I am Pubishing DockerImage ="
-                ''',
-            label: "Publishing Docker Image"
-            }
-        }
+           
     }
 	post{
 		always{
