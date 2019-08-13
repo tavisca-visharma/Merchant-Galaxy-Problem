@@ -31,3 +31,6 @@ tasks.named<Test>("test") {
         events("passed", "skipped", "failed")
     }
 }
+tasks.wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+}
