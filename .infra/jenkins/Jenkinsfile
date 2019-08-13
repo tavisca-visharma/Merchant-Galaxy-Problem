@@ -6,7 +6,7 @@ pipeline {
                 sh script: '''
                     echo "I am in build step"
 					echo "$(pwd)"
-					gradlew build
+					cd ../../ && gradlew build
                 ''',
             label: "Building Project"
             }
