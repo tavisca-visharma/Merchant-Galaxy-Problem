@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am in build step"
-					.\gradlew build
+					.\\gradlew build
                 ''',
             label: "Building Project"
             }
